@@ -11,46 +11,45 @@ import { MainPage } from './MainPage';
 // css imports
 import 'animate.css';
 
-
 /** ------------------------------------------------------------------------ **
  * App component
  ** ------------------------------------------------------------------------ */
 
 function App(): JSX.Element {
-  /**
-   * This React component bundles together the entire application state + main page GUI.
-   */
+	/**
+	 * This React component bundles together the entire application state + main page GUI.
+	 */
 
-  const [state, dispatch] = useReducer(appReducer, defaultState);
+	const [state, dispatch] = useReducer(appReducer, defaultState);
 
-  useEffect(() => {
-    initializeSocket(
-      async socket => {
-        dispatch(new DispatchAction('SET_SOCKET', { socket }));
-        const { songs } = await send(socket, 'get_songs', {});
-        dispatch(new DispatchAction('SET_SONGS', { songs }));
-      },
-      () => {
-        dispatch(new DispatchAction('DELETE_SOCKET'));
-      },
-    );
-  }, []);
+	useEffect(() => {
+		initializeSocket(
+			async (socket) => {
+				dispatch(new DispatchAction('SET_SOCKET', { socket }));
+				const { songs } = await send(socket, 'get_songs', {});
+				dispatch(new DispatchAction('SET_SONGS', { songs }));
+			},
+			() => {
+				dispatch(new DispatchAction('DELETE_SOCKET'));
+			}
+		);
+	}, []);
 
-  return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <MainPage state={state} dispatch={dispatch} />
-        </Route>
-        <Route path="/:instrument">
-          <MainPage state={state} dispatch={dispatch} />
-        </Route>
-        <Route path="*">
-          <div>404</div>
-        </Route>
-      </Switch>
-    </Router>
-  );
+	return (
+		<Router>
+			<Switch>
+				<Route path='/'>
+					<MainPage state={state} dispatch={dispatch} />
+				</Route>
+				<Route path='/:instrument'>
+					<MainPage state={state} dispatch={dispatch} />
+				</Route>
+				<Route path='*'>
+					<div>404</div>
+				</Route>
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
