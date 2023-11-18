@@ -4,10 +4,9 @@ import React from 'react';
 import { InstrumentProps } from '../Instruments'; // Import InstrumentProps
 import { Instrument } from '../Instruments'; // Adjust the path as necessary
 
-// Define the GuitarKeyProps and GuitarKey component
 interface GuitarKeyProps {
-  note: string;  // The note name, e.g., 'A2', 'E3', etc.
-  audioFile: string;  // Path to the audio file for this note
+  note: string;  
+  audioFile: string;  
 }
 
 const GuitarKey: React.FC<GuitarKeyProps> = ({ note, audioFile }) => {
