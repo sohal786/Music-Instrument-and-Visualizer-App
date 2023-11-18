@@ -89,3 +89,46 @@ html, body, #root {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
 }
+
+.guitar {
+  /* Example styles */
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.guitar-string {
+  /* Example styles */
+  height: 10px;
+  background-color: #333;
+  margin-bottom: 40px;
+}
+
+
+.guitar-key {
+  /* Example styles */
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  margin: 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.guitar-key:hover {
+  background-color: #ccc;
+}
+
+
+
+

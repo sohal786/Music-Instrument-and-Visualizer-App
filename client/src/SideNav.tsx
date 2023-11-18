@@ -101,9 +101,12 @@ export function SideNav({ state, dispatch }: SideNavProps): JSX.Element {
           onClick={() => console.log(i.name)}
         />
       ))}
+      
     </Section>
   );
 }
+
+
 
 function VisualizersNav({ state }: SideNavProps): JSX.Element {
   /** 
