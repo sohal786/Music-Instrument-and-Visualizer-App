@@ -97,6 +97,8 @@ function InstrumentsNav({ state }: SideNavProps): JSX.Element {
 	);
 }
 
+
+
 function VisualizersNav({ state }: SideNavProps): JSX.Element {
 	/**
 	 *  VisualizersNav
