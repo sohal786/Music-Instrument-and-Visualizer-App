@@ -15,6 +15,8 @@ import { GuitarInstrument } from './instruments/Guitar';
 
 
 import { EllipticalVisualizer } from './visualizers/drums'
+import { ParticleSystemVisualizer  } from './visualizers/particle'
+
 
 /** ------------------------------------------------------------------------ **
  * The entire application state is stored in AppState.
@@ -32,7 +34,7 @@ const instruments = List([PianoInstrument, HarpInstrument, FluteInstrument, Drum
  * Start with the default waveform visualizer.
  * Add your visualizers to this list.
  */
-const visualizers = List([WaveformVisualizer, EllipticalVisualizer]); // similar to Visualizer[]
+const visualizers = List([WaveformVisualizer, EllipticalVisualizer, ParticleSystemVisualizer ]); // similar to Visualizer[]
 
 /**
  * The default application state contains a list of instruments and a list of visualizers.

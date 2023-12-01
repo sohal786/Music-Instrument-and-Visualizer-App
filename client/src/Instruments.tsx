@@ -1,5 +1,5 @@
 // 3rd party library imports
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,  useMemo } from 'react';
 import * as Tone from 'tone';
 
 // project imports
@@ -17,6 +17,7 @@ export interface InstrumentProps {
   name: string;
   synth: Tone.Synth;
   setSynth: (f: (oldSynth: Tone.Synth) => Tone.Synth) => void;
+  analyzer: Tone.Analyser;
 }
 
 export class Instrument {
@@ -58,6 +59,7 @@ export const InstrumentContainer: React.FC<InstrumentContainerProps> = ({
       oscillator: { type: 'sine' } as Tone.OmniOscillatorOptions,
     }).toDestination(),
   );
+  const analyzer = useMemo(() => new Tone.Analyser('waveform', 256), []);
 
   const notes = state.get('notes');
 
@@ -102,6 +104,7 @@ export const InstrumentContainer: React.FC<InstrumentContainerProps> = ({
           dispatch={dispatch}
           synth={synth}
           setSynth={setSynth}
+          analyzer={analyzer}
         />
       </div>
     </div>
