@@ -8,7 +8,7 @@ import { WaveformVisualizer } from './visualizers/Waveform';
 import { TriangleVisualizer } from './visualizers/jooho2055';
 import { HarpInstrument } from './instruments/jooho2055';
 
-import { FluteInstrument } from './instruments/Flute';
+import { FluteInstrument } from './instruments/itsAhmato';
 import { DrumInstrument } from './instruments/drum';
 
 

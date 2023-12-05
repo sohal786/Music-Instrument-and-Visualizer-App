@@ -6,10 +6,6 @@ import * as Tone from 'tone';
 import { DispatchAction } from './Reducer';
 import { AppState } from './State';
 
-<<<<<<< HEAD
-
-=======
->>>>>>> elliptical_visualizer
 /** ------------------------------------------------------------------------ **
  * Contains base implementation of an Instrument.
  ** ------------------------------------------------------------------------ */
