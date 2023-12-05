@@ -1,4 +1,8 @@
 /node_modules
+<<<<<<< HEAD
 .DS_Store
 
 
+=======
+.DS_Store
+>>>>>>> elliptical_visualizer

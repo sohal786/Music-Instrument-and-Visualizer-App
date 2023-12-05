@@ -6,7 +6,6 @@ import * as Tone from 'tone';
 import { DispatchAction } from './Reducer';
 import { AppState } from './State';
 
-
 /** ------------------------------------------------------------------------ **
  * Contains base implementation of an Instrument.
  ** ------------------------------------------------------------------------ */
