@@ -97,8 +97,11 @@ function InstrumentsNav({ state }: SideNavProps): JSX.Element {
 	);
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> elliptical_visualizer
 function VisualizersNav({ state }: SideNavProps): JSX.Element {
 	/**
 	 *  VisualizersNav
