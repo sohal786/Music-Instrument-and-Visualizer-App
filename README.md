@@ -1,8 +1,24 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/DhlVqdzG)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12599187&assignment_repo_type=AssignmentRepo)
-# LamdbaVibe
 
-CSC 600 musical application. Get ready to shred.
+Ready to play some tunes on this musical application? Look at some screenshots for app visuals and follow the steos below to run it!
+
+![1714508904127](https://github.com/sohal786/Music-Instrument-and-Visualizer-App/assets/91308200/68277125-091a-4012-be10-833c007a872e)
+
+
+![1714508976718](https://github.com/sohal786/Music-Instrument-and-Visualizer-App/assets/91308200/d8845ede-bbaa-42ff-930a-ecfa4d2b2fe2)
+
+
+![Screenshot 2024-06-22 at 12 50 53 PM](https://github.com/sohal786/Music-Instrument-and-Visualizer-App/assets/91308200/7615f7fb-e0a8-407d-8f9b-1a98690b4636)
+
+
+
+![1714508976718](https://github.com/sohal786/Music-Instrument-and-Visualizer-App/assets/91308200/b54f6506-f3ee-425d-a7e8-7e2719cb89db)
+
+
+
+![1714509011676](https://github.com/sohal786/Music-Instrument-and-Visualizer-App/assets/91308200/3d49ff0c-c400-4c69-87ed-e33148b361fd)
+
+
+
 
 You will need Node v16.17.0. You can also try upgrading the libraries!
 
@@ -28,7 +44,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run prod`
 
@@ -50,5 +65,4 @@ In the `server` directory, you can run:
 
 Runs the server in development mode.
 
-The server will restart if you make edits.
-You will also see errors in the console.
+
